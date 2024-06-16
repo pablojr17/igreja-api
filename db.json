@@ -1,0 +1,60 @@
+{
+  "cultos": [
+    {
+      "id": "b6f7",
+      "dataCulto": "2024-06-13",
+      "nomeCulto": "CULTO DE LIBERTAÇÃO",
+      "oferta": 12,
+      "dizimistas": [
+        {
+          "nome": "PABLO",
+          "valor": 120
+        },
+        {
+          "nome": "RAIANE",
+          "valor": 290
+        }
+      ]
+    },
+    {
+      "id": "3a46",
+      "dataCulto": "2024-06-12",
+      "nomeCulto": "CULTO DE CEIA",
+      "oferta": 300,
+      "dizimistas": [
+        {
+          "nome": "PEDRO",
+          "valor": 340
+        },
+        {
+          "nome": "DAVI",
+          "valor": 2344
+        }
+      ]
+    },
+    {
+      "id": "5864",
+      "dataCulto": "2024-06-14",
+      "nomeCulto": "Culto Exemplo",
+      "oferta": 340,
+      "dizimistas": [
+        {
+          "nome": "Paulo",
+          "valor": 233
+        },
+        {
+          "nome": "Tiago",
+          "valor": 56
+        },
+        {
+          "nome": "Nestor",
+          "valor": 89
+        },
+        {
+          "nome": "Maria Madalena",
+          "valor": 564
+        }
+      ]
+    }
+  ]
+}
