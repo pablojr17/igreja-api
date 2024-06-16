@@ -30,17 +30,27 @@ const writeDb = (data: { cultos: Culto[] }) => {
 
 // Obter todos os cultos
 router.get("/", (req, res) => {
-  const db = readDb();
-  res.json(db.cultos);
+  try {
+    const db = readDb();
+    res.json(db.cultos);
+  } catch (error) {
+    console.error("Erro ao ler dados:", error);
+    res.status(500).json({ message: "Erro ao ler dados" });
+  }
 });
 
 // Adicionar um novo culto
 router.post("/", (req, res) => {
-  const db = readDb();
-  const newCulto: Culto = req.body;
-  db.cultos.push(newCulto);
-  writeDb(db);
-  res.status(201).json(newCulto);
+  try {
+    const db = readDb();
+    const newCulto: Culto = req.body;
+    db.cultos.push(newCulto);
+    writeDb(db);
+    res.status(201).json(newCulto);
+  } catch (error) {
+    console.error("Erro ao escrever dados:", error);
+    res.status(500).json({ message: "Erro ao escrever dados" });
+  }
 });
 
 export default router;
